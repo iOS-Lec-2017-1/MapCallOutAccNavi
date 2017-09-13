@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05326F1C1F6976E100B12ACD /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05326F1B1F6976E100B12ACD /* DetailTableViewController.swift */; };
+		05326F1E1F69797300B12ACD /* DIT_View01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05326F1D1F69797300B12ACD /* DIT_View01.jpg */; };
 		05414FEC1F60317A00E5F731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05414FEB1F60317A00E5F731 /* AppDelegate.swift */; };
 		05414FEE1F60317A00E5F731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05414FED1F60317A00E5F731 /* ViewController.swift */; };
 		05414FF11F60317A00E5F731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05414FEF1F60317A00E5F731 /* Main.storyboard */; };
 		05414FF31F60317A00E5F731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05414FF21F60317A00E5F731 /* Assets.xcassets */; };
 		05414FF61F60317A00E5F731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05414FF41F60317A00E5F731 /* LaunchScreen.storyboard */; };
+		05414FFE1F60324300E5F731 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05414FFD1F60324300E5F731 /* DetailViewController.swift */; };
+		054150011F6032CA00E5F731 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054150001F6032CA00E5F731 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05326F1B1F6976E100B12ACD /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		05326F1D1F69797300B12ACD /* DIT_View01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DIT_View01.jpg; sourceTree = "<group>"; };
 		05414FE81F60317A00E5F731 /* MapCalloutAccNavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapCalloutAccNavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05414FEB1F60317A00E5F731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05414FED1F60317A00E5F731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		05414FF21F60317A00E5F731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05414FF51F60317A00E5F731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05414FF71F60317A00E5F731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05414FFD1F60324300E5F731 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		054150001F6032CA00E5F731 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054150011F6032CA00E5F731 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				05414FEA1F60317A00E5F731 /* MapCalloutAccNavi */,
 				05414FE91F60317A00E5F731 /* Products */,
+				05414FFF1F6032CA00E5F731 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +64,25 @@
 		05414FEA1F60317A00E5F731 /* MapCalloutAccNavi */ = {
 			isa = PBXGroup;
 			children = (
+				05326F1D1F69797300B12ACD /* DIT_View01.jpg */,
 				05414FEB1F60317A00E5F731 /* AppDelegate.swift */,
 				05414FED1F60317A00E5F731 /* ViewController.swift */,
 				05414FEF1F60317A00E5F731 /* Main.storyboard */,
+				05326F1B1F6976E100B12ACD /* DetailTableViewController.swift */,
+				05414FFD1F60324300E5F731 /* DetailViewController.swift */,
 				05414FF21F60317A00E5F731 /* Assets.xcassets */,
 				05414FF41F60317A00E5F731 /* LaunchScreen.storyboard */,
 				05414FF71F60317A00E5F731 /* Info.plist */,
 			);
 			path = MapCalloutAccNavi;
+			sourceTree = "<group>";
+		};
+		05414FFF1F6032CA00E5F731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054150001F6032CA00E5F731 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05414FF61F60317A00E5F731 /* LaunchScreen.storyboard in Resources */,
+				05326F1E1F69797300B12ACD /* DIT_View01.jpg in Resources */,
 				05414FF31F60317A00E5F731 /* Assets.xcassets in Resources */,
 				05414FF11F60317A00E5F731 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05326F1C1F6976E100B12ACD /* DetailTableViewController.swift in Sources */,
+				05414FFE1F60324300E5F731 /* DetailViewController.swift in Sources */,
 				05414FEE1F60317A00E5F731 /* ViewController.swift in Sources */,
 				05414FEC1F60317A00E5F731 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +326,7 @@
 				05414FFC1F60317A00E5F731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
